@@ -7,7 +7,7 @@
 * board: SEN-20001. Also used with SEN-39002 - Lightning Emulator shield
 *   ---> http://playingwithfusion.com/
 *
-* Copyright © 2017 Playing With Fusion, Inc.
+* Copyright (C) 2017 Playing With Fusion, Inc.
 * SOFTWARE LICENSE AGREEMENT: This code is released under the MIT License.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a
@@ -29,8 +29,8 @@
 * DEALINGS IN THE SOFTWARE.
 * **************************************************************************
 * REVISION HISTORY:
-* Author		    Date		Comments
-* J. Steinlage		2017Jan16	Original version
+* Author            Date        Comments
+* J. Steinlage      2017Jan16   Original version
 *
 * Playing With Fusion, Inc. invests time and resources developing open-source
 * code. Please support Playing With Fusion and continued open-source
@@ -44,10 +44,10 @@
 #include "Wire.h"
 
 // Commands to write data vs EEPROM (volatile vs nonvolatile)
-#define MCP4725_DAC_SET			0x40	/* set DAC, does not last over power cycle */
-#define MCP4725_EEPROM_SET		0x60	/* set DAC, setting lasts over power cycle */
+#define MCP4725_DAC_SET       0x40	/* set DAC, does not last over power cycle */
+#define MCP4725_EEPROM_SET    0x60	/* set DAC, setting lasts over power cycle */
 
-#define MCP4725_DAC_OFF			0x10	/* power down setting - 1k pull-down */ 
+#define MCP4725_DAC_OFF       0x10	/* power down setting - 1k pull-down */ 
 
 class PWFusion_MCP4725{
 public:	
